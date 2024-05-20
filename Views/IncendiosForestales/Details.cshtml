@@ -1,0 +1,58 @@
+﻿@model WebApplication2.Models.IncendiosForestales
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>IncendiosForestales</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBosques)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBosques)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPersonal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPersonal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdReservasAgua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdReservasAgua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdHerramientas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdHerramientas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCantidadHerramienta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCantidadHerramienta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
